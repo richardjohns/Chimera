@@ -6,7 +6,8 @@ const fs = require('fs')
 
 var data = require('./data.json')
 
-router.get('/', (req, res) => {
+
+router.get('/', function (req, res) {
   res.redirect('/chimera')
 })
 
@@ -17,7 +18,8 @@ router.get('/chimera', function (req, res) {
       return console.log('there was an error: ' + err)
     }
 
-    res.render('chimera/index', data)
+
+    res.render('layouts/main', data)
 
   })
 })
