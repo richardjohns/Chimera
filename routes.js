@@ -6,7 +6,7 @@ const fs = require('fs')
 
 var data = require('./data.json')
 
-router.get('/', function (req, res) => {
+router.get('/', (req, res) => {
   res.redirect('/chimera')
 })
 
@@ -18,7 +18,7 @@ router.get('/chimera', function (req, res) {
     }
 
     res.render('chimera/index', data)
-    
+
   })
 })
 
