@@ -4,15 +4,27 @@ body {
 }
 
 .head {
-  background-image:
+  background-image: url(/images/A-head-bull.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
 }
 
 .body {
-
+  background-image: url(/images/B-torso-flippers.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
 }
 
 .legs {
-
+  background-image: url(/images/C-leg-frog.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
 }
 
 
