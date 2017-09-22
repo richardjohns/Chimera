@@ -17,11 +17,13 @@ router.get('/test/:idOne/:idTwo/:idThree', (req, res) => {
   // res.send(req.params)
 })
 
-router.get('/test', (req, res) => {
-  let headImage = data.head.find(image => image.id ===  Number(req.query.head))
-  let torsoImage = data.body.find(image => image.id === Number(req.query.torso))
-  let legsImage = data.legs.find(image => image.id === Number(req.query.legs))
-  res.send({headImage, torsoImage, legsImage})
+router.post('/testpost', (req, res) => {
+  console.log(req.body);
+  let headImage = data.head.find(image => image.id ===  Number(req.body.headOption))
+  let torsoImage = data.body.find(image => image.id === Number(req.body.bodyOption))
+  let legsImage = data.legs.find(image => image.id === Number(req.body.legOption))
+  console.log({headImage, torsoImage, legsImage});
+  res.render('chimera/chimera', {headImage, torsoImage, legsImage})
   // res.send(req.params)
 })
 
@@ -43,7 +45,7 @@ router.get('/chimera', function (req, res) {
       return console.log('there was an error: ' + err)
     }
 
-    res.render('layouts/main', data)
+    res.render('chimera/index', data)
 
   })
 })
