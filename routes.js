@@ -1,10 +1,8 @@
-// routes
-
-var express = require('express')
-var router = express.Router()
+const express = require('express')
+const router = express.Router()
 const fs = require('fs')
 
-var data = require('./data.json')
+const data = require('./data.json')
 
 
 // const yourCreation = {
@@ -29,7 +27,6 @@ router.get('/chimera', function (req, res) {
       return console.log('there was an error: ' + err)
     }
 
-
     res.render('layouts/main', data)
 
   })
@@ -50,4 +47,5 @@ router.get('/test/creation', (req, res) => {
 router.get('/', function (req, res) {
   res.redirect('/chimera')
 })
+
 module.exports = router
