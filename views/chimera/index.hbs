@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="title">Welcome</h1>
+</div>
+
+<div class="container altbackground">
+  <h1 class="title">It's time to start your adventure!</h1>
+</div>
+
+
+<form action="/testpost" method="post">
+  {{> nameOption}}
+  {{> headOption}}
+  {{> bodyOption}}
+  {{> legsOption}}
+  <div class="container">
+    <h1 class="title">All will be revealed...</h1>
+  </div>
+  <div class="container">
+    <input type="submit" value="Submit">
+  </div>
+</form>
