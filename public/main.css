@@ -58,11 +58,10 @@ image {
   flex-direction: column;
 }
 
-.puppy-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main-image {
+  width: 400px;
   margin: 50px;
+  margin-top: 20px;
 }
 
 .puppy {
