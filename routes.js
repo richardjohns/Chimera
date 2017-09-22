@@ -17,9 +17,25 @@ router.get('/test/:idOne/:idTwo/:idThree', (req, res) => {
   // res.send(req.params)
 })
 
+router.get('/test', (req, res) => {
+  let headImage = data.head.find(image => image.id ===  Number(req.query.head))
+  let torsoImage = data.body.find(image => image.id === Number(req.query.torso))
+  let legsImage = data.legs.find(image => image.id === Number(req.query.legs))
+  res.send({headImage, torsoImage, legsImage})
+  // res.send(req.params)
+})
+
+
+// router.post('/test', (req, res) => {
+//   let fullBody = headImagetorsoImage.legsImage
+//   res.send(fullBody)})
 // router.get('/chimera/creation', function ())
 
 
+
+
+// .find(image =>
+//   image.id === Number(req.params.id))
 
 router.get('/chimera', function (req, res) {
   fs.readFile('./data.json', function(err, data) {
@@ -31,6 +47,7 @@ router.get('/chimera', function (req, res) {
 
   })
 })
+
 
 router.get('/test/creation', (req, res) => {
   //find image head id
