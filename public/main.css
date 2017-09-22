@@ -3,6 +3,19 @@ body {
   font-family: 'Spirax', cursive;
 }
 
+.head {
+  background-image:
+}
+
+.body {
+
+}
+
+.legs {
+
+}
+
+
 .container {
   display: flex;
   flex-wrap: wrap;
