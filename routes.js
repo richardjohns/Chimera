@@ -14,11 +14,8 @@ router.get('/chimera', function (req, res) {
     if (err) {
       return console.log('there was an error: ' + err)
     }
-
     res.render('chimera/index', data)
-
   })
 })
-
 
 module.exports = router
