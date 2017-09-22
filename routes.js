@@ -21,13 +21,17 @@ router.get('/test/:idOne/:idTwo/:idThree', (req, res) => {
 
 
 
+router.post('/testpost', (req, res) => {
+  console.log(req.body);
+})
+
 router.get('/chimera', function (req, res) {
   fs.readFile('./data.json', function(err, data) {
     if (err) {
       return console.log('there was an error: ' + err)
     }
 
-    res.render('layouts/main', data)
+    res.render('chimera/index', data)
 
   })
 })
