@@ -4,7 +4,7 @@ const fs = require('fs')
 
 const data = require('./data.json')
 
-router.get('/', function (req, res) => {
+router.get('/', function (req, res) {
   res.redirect('/chimera')
 })
 

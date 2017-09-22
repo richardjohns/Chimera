@@ -1,5 +1,5 @@
 body {
-  background-color: #FFCCCC;
+  background-color: #64d8cb;
   font-family: 'Spirax', cursive;
 }
 
@@ -7,6 +7,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.altbackground {
+  background-color: #00766c;
 }
 
 .app {
